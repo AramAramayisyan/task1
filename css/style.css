@@ -16,7 +16,7 @@ section {
     padding: 10px;
 }
 
-#container {
+.container {
     width: 340px;
     max-width: 100%;
     padding: 20px 20px 0;
@@ -24,11 +24,11 @@ section {
     border-radius: 10px;
 }
 
-.divs {
+.header, .body, .footer {
     padding-bottom: 20px;
 }
 
-form, #inputDiv, .divTodo, #information {
+form, .addItem, .item, .information {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,42 +50,54 @@ button {
     cursor: pointer;
 }
 
-#inputDiv button {
+.addItem button {
     width: 11%;
     background-color: #8a33d7;
     color: #fff;
 }
 
-.divTodo {
+.changeBody {
+    display: flex;
+    width: 74px;
+}
+
+.item {
     background: #e8e9ea;
     margin: 5px 0;
     border-radius: 5px;
     padding-left:10px;
 }
 
-.divTodo p {
+.item p {
     color: #353535;
 }
 
-.divButtonTodo button {
+.editItem button, .removeItem button {
+    width: 35px;
     height: 35px;
     background-color: red;
     color: #fff;
 }
 
-#informationText {
+.editItem button {
+    background-color: yellowgreen;
+    color: #fff;
+    margin-right: 4px;
+}
+
+.title {
     font-size: 30px;
     margin-bottom: 15px;
 }
 
-#buttonClear {
+.clearAll {
     width: 25%;
     background: #8a33d7;
     color: #fff;
 }
 
 @media (max-width: 480px) {
-    #container {
+    .container {
         width: 100%;
         padding: 15px;
     }
@@ -95,17 +107,17 @@ button {
         height: 30px;
     }
 
-    #inputDiv button {
+    .addItem button {
         width: 30%;
         height: 30px;
     }
 
-    #informationText {
+    .title {
         font-size: 20px;
     }
 
-    .divTodo {
-        flex-direction: column;
+    .item {
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         height: auto;
@@ -113,25 +125,31 @@ button {
         text-align: center;
     }
 
-    .divTodo p {
+    .item p {
         margin-bottom: 5px;
     }
 
-    .divButtonTodo {
+    .changeBody button {
+        display: flex;
+        width: 25px;
+        height: 25px;
+    }
+
+    .editItem, .removeItem {
         width: 100%;
     }
 
-    .divButtonTodo button {
+    .editItem button , .removeItem button{
         width: auto;
     }
 
-    #information {
+    .information {
         flex-direction: column;
         height: auto;
         gap: 10px;
     }
 
-    #buttonClear {
+    .clearAll {
         width: 100%;
     }
 }

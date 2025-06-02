@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+          content="wgitth=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -11,33 +11,74 @@
 </head>
 <body>
 <section>
-    <div id="container">
-        <div class="divs">
-            <h1 id="informationText">Todo App</h1>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Todo App</h1>
             <form>
-                <div id="inputDiv">
+                <div class="addItem">
                     <input type="text" placeholder="Add your new todo">
                     <button><i class="fa-solid fa-plus"></i></button>
                 </div>
             </form>
         </div>
-        <div class="divs">
-            <div class="divTodo">
-                <p>Buy a new gaming laptop</p>
-            </div>
-            <div class="divTodo">
-                <div class="divText"><p>Complete a previous task</p></div>
-                <div class="divButtonTodo">
-                    <button><i class="fa-solid fa-recycle"></i></button>
+        <div class="body">
+            <div class="item">
+                <div class="itemText">
+                    <p>Buy a new gaming laptop</p>
+                </div>
+                <div class="changeBody">
+                    <div class="editItem">
+                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                    </div>
+                    <div class="removeItem">
+                        <button><i class="fa-solid fa-trash"></i></button>
+                    </div>
                 </div>
             </div>
-            <div class="divTodo"><p>Create video for YouTube</p></div>
-            <div class="divTodo"><p>Create a new portfolio site</p></div>
+            <div class="item">
+                <div class="itemText">
+                    <p>Complete a previous task</p>
+                </div>
+                <div class="changeBody">
+                    <div class="editItem">
+                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                    </div>
+                    <div class="removeItem">
+                        <button><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemText">
+                    <p>Create video for YouTube</p>
+                </div>
+                <div class="changeBody">
+                    <div class="editItem">
+                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                    </div>
+                    <div class="removeItem">
+                        <button><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemText">
+                    <p>Create a new portfolio site</p>
+                </div>
+                <div class="changeBody">
+                    <div class="editItem">
+                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                    </div>
+                    <div class="removeItem">
+                        <button><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="divs">
-            <div id="information">
+        <div class="footer">
+            <div class="information">
                 <p>You have 4 pending tasks</p>
-                <button id="buttonClear">Clear All</button>
+                <button class="clearAll">Clear All</button>
             </div>
         </div>
     </div>
