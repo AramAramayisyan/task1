@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: linear-gradient(180deg, #66f2f9, #20a4aa);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+#container {
+    width: 340px;
+    max-width: 100%;
+    padding: 20px 20px 0;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.divs {
+    padding-bottom: 20px;
+}
+
+form, #inputDiv, .divTodo, #information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    width: 100%;
+}
+
+input {
+    width: 86%;
+    height: 100%;
+    padding: 0 10px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+#inputDiv button {
+    width: 11%;
+    background-color: #8a33d7;
+    color: #fff;
+}
+
+.divTodo {
+    background: #e8e9ea;
+    margin: 5px 0;
+    border-radius: 5px;
+    padding-left:10px;
+}
+
+.divTodo p {
+    color: #353535;
+}
+
+.divButtonTodo button {
+    height: 35px;
+    background-color: red;
+    color: #fff;
+}
+
+#information {
+    /*gap: 10px;*/
+}
+
+#informationText {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+#buttonClear {
+    width: 25%;
+    background: #8a33d7;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    #container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    input {
+        width: 70%;
+        height: 30px;
+    }
+
+    #inputDiv button {
+        width: 28%;
+        height: 30px;
+    }
+
+    #informationText {
+        font-size: 20px;
+    }
+
+    .divTodo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .divTodo p {
+        margin-bottom: 5px;
+    }
+
+    .divButtonTodo {
+        width: 100%;
+    }
+
+    .divButtonTodo button {
+        width: auto;
+    }
+
+    #information {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    #buttonClear {
+        width: 100%;
+    }
+}
