@@ -14,12 +14,12 @@
     <div class="container">
         <div class="header">
             <h1 class="title">Todo App</h1>
-            <form>
+<!--            <form>-->
                 <div class="addItem">
-                    <input type="text" placeholder="Add your new todo">
-                    <button><i class="fa-solid fa-plus"></i></button>
+                    <input id = "newItem" type="text" placeholder="Add your new todo">
+                    <button onclick="newItem()"><i class="fa-solid fa-plus"></i></button>
                 </div>
-            </form>
+<!--            </form>-->
         </div>
         <div class="body">
             <div class="item">
@@ -28,60 +28,24 @@
                 </div>
                 <div class="changeBody">
                     <div class="editItem">
-                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button onclick="changeItem(this)" ><i class="fa-solid fa-pen-to-square"></i></button>
                     </div>
                     <div class="removeItem">
-                        <button><i class="fa-solid fa-trash"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="itemText">
-                    <p>Complete a previous task</p>
-                </div>
-                <div class="changeBody">
-                    <div class="editItem">
-                        <button><i class="fa-solid fa-pen-to-square"></i></button>
-                    </div>
-                    <div class="removeItem">
-                        <button><i class="fa-solid fa-trash"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="itemText">
-                    <p>Create video for YouTube</p>
-                </div>
-                <div class="changeBody">
-                    <div class="editItem">
-                        <button><i class="fa-solid fa-pen-to-square"></i></button>
-                    </div>
-                    <div class="removeItem">
-                        <button><i class="fa-solid fa-trash"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="itemText">
-                    <p>Create a new portfolio site</p>
-                </div>
-                <div class="changeBody">
-                    <div class="editItem">
-                        <button><i class="fa-solid fa-pen-to-square"></i></button>
-                    </div>
-                    <div class="removeItem">
-                        <button><i class="fa-solid fa-trash"></i></button>
+                        <button onclick="removeItem(this)"><i class="fa-solid fa-trash"></i></button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer">
             <div class="information">
-                <p>You have 4 pending tasks</p>
-                <button class="clearAll">Clear All</button>
+                <p class = "textInfo">You have 4 pending tasks</p>
+                <button onclick="clearAll()" class="clearAll">Clear All</button>
             </div>
         </div>
     </div>
 </section>
+<script src = "js/script.js"></script>
+<script src = "helpers/library.js"></script>
 </body>
 </html>
+
