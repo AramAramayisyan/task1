@@ -3,122 +3,104 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
 body {
     background-image: linear-gradient(180deg, #66f2f9, #20a4aa);
 }
-
-section {
+.todo-app {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding: 10px;
 }
-
-.container {
+.todo-app__container {
     width: 340px;
     padding: 20px 20px 0;
     background: #fff;
     border-radius: 10px;
 }
-
-.header, .body, .footer {
+.todo-app__header, .todo-app__body, .todo-app__footer {
     padding-bottom: 20px;
 }
-
-form, .addItem, .item, .information {
+.todo-app__body {
+    max-height: 300px;
+    overflow-y: auto;
+}
+.todo-app__add-item, .todo-app__item, .todo-app__information {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 35px;
     width: 100%;
 }
-
-input {
+.todo-app__input {
     width: 260px;
     height: 100%;
     padding: 0 10px;
 }
-
-button {
+.todo-app__button {
     border: none;
     border-radius: 5px;
     height: 100%;
     width: 100%;
     cursor: pointer;
 }
-
-.addItem button {
+.todo-app__button--add {
     width: 35px;
     background-color: #8a33d7;
     color: #fff;
 }
-
-.changeBody {
+.todo-app__item-actions {
     display: flex;
     width: 74px;
 }
-
-.item {
+.todo-app__item {
     background: #e8e9ea;
     margin: 5px 0;
     border-radius: 5px;
-    padding-left:10px;
+    padding-left: 10px;
 }
-
-.item p {
+.todo-app__item-text p {
     color: #353535;
 }
-
-.editItem button, .removeItem button {
+.todo-app__button--edit {
+    width: 35px;
+    height: 35px;
+    background-color: yellowgreen;
+    color: #fff;
+    margin-right: 4px;
+}
+.todo-app__button--remove {
     width: 35px;
     height: 35px;
     background-color: red;
     color: #fff;
 }
-
-.editItem button {
-    background-color: yellowgreen;
-    color: #fff;
-    margin-right: 4px;
-}
-
-.edit {
-    background-color: yellowgreen !important;
-}
-
-.title {
+.todo-app__title {
     font-size: 30px;
     margin-bottom: 15px;
 }
-
-.clearAll {
+.todo-app__button--clear {
     width: 74px;
     background: #8a33d7;
     color: #fff;
 }
-
 @media (max-width: 480px) {
-    .container {
+    .todo-app__container {
         width: 100%;
         padding: 15px;
     }
-
-    input {
+    .todo-app__input {
         height: 25px;
     }
-
-    .addItem button {
+    .todo-app__button--add {
         width: 25px;
         height: 25px;
     }
-
-    .title {
+    .todo-app__title {
         font-size: 20px;
     }
-
-    .item {
+    .todo-app__item {
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -126,28 +108,22 @@ button {
         padding: 10px;
         text-align: center;
     }
-
-    .item p {
+    .todo-app__item-text p {
         margin-bottom: 5px;
     }
-
-    .changeBody button {
+    .todo-app__item-actions button {
         display: flex;
         width: 25px;
         height: 25px;
     }
 
-    .editItem button , .removeItem button{
-        width: auto;
-    }
-
-    .information {
+    .todo-app__information {
         flex-direction: column;
         height: auto;
         gap: 10px;
     }
 
-    .clearAll {
+    .todo-app__button--clear {
         width: 100%;
     }
 }
